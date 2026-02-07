@@ -45,13 +45,13 @@ Image–label pairs are matched by identical filename stem:
 <pre>
 Image: download/images/<stem>.jpg
 Label: download/labels/<stem>.txt
-<pre>
+</pre>
 
 Example:
 <pre>
 download/images/D01_xxx_00_00_00-00_05_00_3087.jpg
 download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
-<pre>
+</pre>
 
 ---
 
