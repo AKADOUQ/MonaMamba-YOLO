@@ -16,28 +16,37 @@ This repository releases an **annotated sample subset** for the TII manuscript o
 ## 1. What’s Included
 ﻿
 This release contains:
-- `images/` — sample images (`.jpg`)
-- `labels/` — YOLO-format annotations (`.txt`)
+- `download.zip` — the sample subset (images + YOLO labels)
 - `README.md` — this document
 ﻿
 ### 1.1 Directory Structure
+﻿
+```text
 .
-├── images/
-├── labels/
+├── download.zip
 └── README.md﻿
 ﻿
-### 1.2 Pairing Rule
+### 1.2 After Unzipping
 
-Image–label pairs are matched by **identical filename stem**:
+Unzip download.zip to obtain the sample subset structure:
+download/
+├── images/              # sample images (.jpg)
+└── labels/              # YOLO-format annotations (.txt)
+Note: Some filenames may include spaces; when scripting, wrap paths in quotes.
 
-- Image: `images/<stem>.jpg`
-- Label: `labels/<stem>.txt`
+### 1.3 Pairing Rule
 
-For example:
-- `images/D01_xxx_00_00_00-00_05_00_3087.jpg`
-- `labels/D01_xxx_00_00_00-00_05_00_3087.txt`
+Image–label pairs are matched by identical filename stem:
 
-**Do not rename files.** Some filenames may include spaces; when scripting, wrap paths in quotes.
+Image: download/images/<stem>.jpg
+
+Label: download/labels/<stem>.txt
+
+Example:
+
+download/images/D01_xxx_00_00_00-00_05_00_3087.jpg
+
+download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
 
 ---
 
