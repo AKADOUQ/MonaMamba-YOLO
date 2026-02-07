@@ -44,31 +44,13 @@ Some filenames may include spaces; when scripting, wrap paths in quotes.
 
 ## Annotation Specification (YOLO)
 
-### Class Definition
+This sample subset uses a single detection class: `fallen can` (class_id = 0), defined as a can that has fallen/tipped over on the production line (abnormal target). Each label file `download/labels/<stem>.txt` contains 0 or more lines in the standard YOLO txt format:
 
-| class_id | name       | definition |
-|---------:|------------|------------|
-| 0        | fallen can | A can that has fallen/tipped over on the production line (abnormal target). |
+<pre>
+class_id  cx  cy  w  h
+</pre>
 
-### Label Format
-
-Each label file `download/labels/<stem>.txt` contains 0 or more lines in the standard **YOLO txt** format:
-
-class_id cx cy w h
-
-- `class_id`: integer (only `0` in this dataset)
-- `cx, cy, w, h`: **normalized** to `[0, 1]` by image width/height
-
-**Empty label file** means **no fallen can** in the image.
-
-### Bounding-Box Rules
-
-To ensure consistent annotations:
-- **Boundary target:** boxes should follow the **physical can body**; specular highlights alone should not define the box.
-- **Occlusion:** annotate the **visible extent** of the fallen can when partially occluded.
-- **Truncation/out-of-frame:** annotate the visible part and keep the box within the image.
-- **Motion blur / glare:** annotate if the can boundary remains identifiable; otherwise omit.
-- **Multiple instances:** annotate each fallen can separately (one line per instance).
+Here `class_id` is an integer (only `0` in this dataset), and `cx, cy, w, h` are **normalized** to `[0, 1]` by image width/height. An empty label file indicates **no fallen can** in the corresponding image. Bounding boxes should follow the **physical can body** rather than specular highlights alone; for partial occlusion, annotate the **visible extent**; for truncation/out-of-frame cases, annotate the visible part and keep the box within the image; for motion blur/glare, annotate only when the can boundary remains identifiable; and if multiple fallen cans appear, annotate each instance separately (one line per instance).
 
 ---
 
