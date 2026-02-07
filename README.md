@@ -62,16 +62,14 @@ If multiple fallen cans appear, annotate each instance separately (one line per 
 ---
 
 ## Evaluation Details
-﻿
+
 This section summarizes the evaluation protocol used in the manuscript so readers can interpret the reported results consistently. 
 
-All images are evaluated at an input size of **640 × 640** using a fixed resize policy (`<letterbox (keep aspect ratio) / direct resize>`) that is kept identical across all compared methods, and **no test-time augmentation (TTA)** is applied unless explicitly stated. 
+All images are evaluated at an input size of **640 × 640** with a fixed resize policy (**letterbox, keep aspect ratio**) that is kept identical across all compared methods, and **no test-time augmentation (TTA)** is applied unless explicitly stated. 
 
-Post-processing uses standard NMS with a confidence threshold of `<value or "Ultralytics default">`, an NMS IoU threshold of `<value or "Ultralytics default">`, and a maximum of `<value or "Ultralytics default">` detections per image. 
+Post-processing uses standard NMS with the Ultralytics default validation settings (**conf=0.001**, **iou=0.7**, **max_det=300**). 
 
-For reference and reproducibility, we report the inference stack used in our experiments:
-PyTorch version: `<PyTorch version>`
-CUDA version: `<CUDA version>`
+The experiments are conducted on Ubuntu 22.04 with **PyTorch 2.5.1** and **CUDA 12.4**. 
 
 We report **mAP@0.5** and **mAP@0.5:0.95**, and Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistencies.
 
