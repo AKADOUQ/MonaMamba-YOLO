@@ -50,16 +50,28 @@ This sample subset uses a single detection class: `fallen can` (class_id = 0), d
 class_id  cx  cy  w  h
 </pre>
 
-Here `class_id` is an integer (only `0` in this dataset), and `cx, cy, w, h` are **normalized** to `[0, 1]` by image width/height. An empty label file indicates **no fallen can** in the corresponding image. Bounding boxes should follow the **physical can body** rather than specular highlights alone; for partial occlusion, annotate the **visible extent**; for truncation/out-of-frame cases, annotate the visible part and keep the box within the image; for motion blur/glare, annotate only when the can boundary remains identifiable; and if multiple fallen cans appear, annotate each instance separately (one line per instance).
+Here `class_id` is an integer (only `0` in this dataset), and `cx, cy, w, h` are **normalized** to `[0, 1]` by image width/height. 
+
+An empty label file indicates **no fallen can** in the corresponding image. 
+
+Bounding boxes should follow the **physical can body** rather than specular highlights alone; 
+For partial occlusion, annotate the **visible extent**; 
+For truncation/out-of-frame cases, annotate the visible part and keep the box within the image; 
+For motion blur/glare, annotate only when the can boundary remains identifiable; 
+If multiple fallen cans appear, annotate each instance separately (one line per instance).
 
 ---
 
 ## Evaluation Details
 ﻿
 This section summarizes the evaluation protocol used in the manuscript so readers can interpret the reported results consistently. 
+
 All images are evaluated at an input size of **640 × 640** using a fixed resize policy (`<letterbox (keep aspect ratio) / direct resize>`) that is kept identical across all compared methods, and **no test-time augmentation (TTA)** is applied unless explicitly stated. 
+
 Post-processing uses standard NMS with a confidence threshold of `<value or "Ultralytics default">`, an NMS IoU threshold of `<value or "Ultralytics default">`, and a maximum of `<value or "Ultralytics default">` detections per image. 
+
 For reference and reproducibility, please record the exact inference stack used in your experiments (e.g., `<PyTorch version>`, `<CUDA version>`, and `<Ultralytics/YOLO version>` such as `ultralytics==x.y.z`). 
+
 We report **mAP@0.5** (IoU = 0.5) and **mAP@0.5:0.95** (IoU = 0.50:0.05:0.95, COCO-style), and Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistencies.
 
 ---
