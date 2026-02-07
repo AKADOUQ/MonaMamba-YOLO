@@ -69,9 +69,11 @@ All images are evaluated at an input size of **640 × 640** using a fixed resize
 
 Post-processing uses standard NMS with a confidence threshold of `<value or "Ultralytics default">`, an NMS IoU threshold of `<value or "Ultralytics default">`, and a maximum of `<value or "Ultralytics default">` detections per image. 
 
-For reference and reproducibility, please record the exact inference stack used in your experiments (e.g., `<PyTorch version>`, `<CUDA version>`, and `<Ultralytics/YOLO version>` such as `ultralytics==x.y.z`). 
+For reference and reproducibility, we report the inference stack used in our experiments:
+PyTorch version: `<PyTorch version>`
+CUDA version: `<CUDA version>`
 
-We report **mAP@0.5** (IoU = 0.5) and **mAP@0.5:0.95** (IoU = 0.50:0.05:0.95, COCO-style), and Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistencies.
+We report **mAP@0.5** and **mAP@0.5:0.95**, and Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistencies.
 
 ---
 
