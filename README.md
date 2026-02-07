@@ -21,17 +21,15 @@ This release contains:
 ﻿
 ### 1.1 Directory Structure
 
+<pre>
 .
 ├── download.zip
-└── README.md﻿
+└── README.md
+</pre>
 ﻿
 ### 1.2 After Unzipping
 
 Unzip `download.zip` to obtain the sample subset structure:
-
-download/
-├── images/              # sample images (.jpg)
-└── labels/              # YOLO-format annotations (.txt)
 
 <pre>
 download/
