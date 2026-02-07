@@ -51,6 +51,7 @@ Example:
 <pre>
 download/images/D01_xxx_00_00_00-00_05_00_3087.jpg
 download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
+...
 </pre>
 
 ---
