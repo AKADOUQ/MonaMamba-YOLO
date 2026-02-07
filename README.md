@@ -1,8 +1,7 @@
 # MonaMamba-YOLO-Robust-Dense-Aluminum-Can-Anomaly-Detection-under-Industrial-Scenario
 
-# YOLO-MAD Fallen Can Sample Subset
 ﻿
-This repository releases an **annotated sample subset** for the TII manuscript on aluminum-can anomaly detection (YOLO-MAD), aiming to improve **transparency** and **reproducibility** under industrial privacy/IP constraints.
+This repository releases an **annotated sample subset** on aluminum-can anomaly detection (YOLO-MAD), aiming to improve **transparency** and **reproducibility** under industrial privacy/IP constraints.
 ﻿
 - **Task:** single-class object detection
 - **Class:** `fallen can` (ID = 0)
@@ -115,7 +114,7 @@ Precision/Recall should be computed under the same IoU criterion used for mAP re
 
 ---
 
-## 4. Citation
+## Citation
 
 If you use this sample subset, please cite:
 
@@ -123,7 +122,7 @@ If you use this sample subset, please cite:
 
 ---
 
-## 5. Access to Full Materials
+## License
 
 The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement upon reasonable request.
 
