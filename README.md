@@ -26,7 +26,7 @@ This release contains:
 ├── labels/
 └── README.md﻿
 ﻿
-### 1.2 Pairing Rule (IMPORTANT)
+### 1.2 Pairing Rule
 
 Image–label pairs are matched by **identical filename stem**:
 
@@ -60,7 +60,7 @@ class_id cx cy w h
 
 **Empty label file** means **no fallen can** in the image.
 
-### 2.3 Bounding-Box Rules (Consistency Guidelines)
+### 2.3 Bounding-Box Rules
 
 To ensure consistent annotations:
 - **Boundary target:** boxes should follow the **physical can body**; specular highlights alone should not define the box.
@@ -71,7 +71,7 @@ To ensure consistent annotations:
 
 ---
 
-## 3. Evaluation Details (Paper Protocol)
+## 3. Evaluation Details
 
 This section describes the evaluation protocol used in the manuscript so readers can interpret reported numbers consistently.
 
@@ -98,22 +98,9 @@ We report:
 
 Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistency.
 
-(Optional) If evaluating *tiny* cases:
-- Tiny definition: `<relative bbox area threshold or pixel-size threshold>`
-- Report: Tiny Recall (as used in the manuscript)
-
 ---
 
-## 4. Integrity Check (Optional)
-
-To validate that the release is complete:
-- Each entry in `images.csv` should exist in `images/`
-- Each entry in `labels.csv` should exist in `labels/`
-- Each image should have a matching label file with the same stem, and vice versa
-
----
-
-## 5. License & Usage
+## 4. License & Usage
 
 This sample subset is released **for academic research and benchmarking only**.  
 Commercial use is not permitted without explicit written permission from the data owner/partner.
@@ -123,17 +110,17 @@ Commercial use is not permitted without explicit written permission from the dat
 
 ---
 
-## 6. Citation
+## 5. Citation
 
 If you use this sample subset, please cite:
 
-<Your paper title>, IEEE Transactions on Industrial Informatics (under review).
+<MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial  Scenario>, IEEE Transactions on Industrial Informatics (under review).
 
 ---
 
-## 7. Access to Full Materials (Restricted)
+## 6. Access to Full Materials
 
-The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement (with partner permission) upon reasonable request.
+The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement upon reasonable request.
 
 - Corresponding author: `<name>`
 - Email: `<email>`
