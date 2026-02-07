@@ -12,13 +12,13 @@ This repository releases an **annotated sample subset** on aluminum-can anomaly 
 ﻿
 ---
 ﻿
-## 1. What’s Included
+## Data
 ﻿
 This release contains:
 - `download.zip` — the sample subset (images + YOLO labels)
 - `README.md` — this document
 ﻿
-### 1.1 Directory Structure
+### Directory Structure
 
 <pre>
 .
@@ -26,7 +26,7 @@ This release contains:
 └── README.md
 </pre>
 ﻿
-### 1.2 After Unzipping
+### After Unzipping
 
 Unzip `download.zip` to obtain the sample subset structure:
 
@@ -38,7 +38,7 @@ download/
 
 Note: Some filenames may include spaces; when scripting, wrap paths in quotes.
 
-### 1.3 Pairing Rule
+### Pairing Rule
 
 Image–label pairs are matched by identical filename stem:
 <pre>
@@ -55,15 +55,15 @@ download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
 
 ---
 
-## 2. Annotation Specification (YOLO)
+## Annotation Specification (YOLO)
 
-### 2.1 Class Definition
+### Class Definition
 
 | class_id | name       | definition |
 |---------:|------------|------------|
 | 0        | fallen can | A can that has fallen/tipped over on the production line (abnormal target). |
 
-### 2.2 Label Format
+### Label Format
 
 Each label file `download/labels/<stem>.txt` contains 0 or more lines in the standard **YOLO txt** format:
 
@@ -74,7 +74,7 @@ class_id cx cy w h
 
 **Empty label file** means **no fallen can** in the image.
 
-### 2.3 Bounding-Box Rules
+### Bounding-Box Rules
 
 To ensure consistent annotations:
 - **Boundary target:** boxes should follow the **physical can body**; specular highlights alone should not define the box.
@@ -85,17 +85,17 @@ To ensure consistent annotations:
 
 ---
 
-## 3. Evaluation Details
+## Evaluation Details
 
 This section describes the evaluation protocol used in the manuscript so readers can interpret reported numbers consistently.
 
-### 3.1 Input & Pre-processing
+### Input & Pre-processing
 - Input size: **640 × 640**
 - Resize policy: `<letterbox (keep aspect ratio) / direct resize>`  
   *(Use the same policy for all compared methods.)*
 - Test-time augmentation (TTA): **No** (unless explicitly stated)
 
-### 3.2 Post-processing
+### Post-processing
 - NMS: standard NMS
 - Confidence threshold: `<value or "Ultralytics default">`
 - NMS IoU threshold: `<value or "Ultralytics default">`
@@ -105,7 +105,7 @@ This section describes the evaluation protocol used in the manuscript so readers
 > - Framework: `<PyTorch version>`, `<CUDA version>`  
 > - Implementation: `<Ultralytics/YOLO version>` (e.g., `ultralytics==x.y.z`)
 
-### 3.3 Metrics
+### Metrics
 We report:
 - **mAP@0.5** (IoU = 0.5)
 - **mAP@0.5:0.95** (IoU = 0.50:0.05:0.95, COCO-style)
