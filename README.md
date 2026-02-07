@@ -1,5 +1,4 @@
 # MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial Scenario
-
 ﻿
 This repository releases an **annotated sample subset** on aluminum-can anomaly detection (YOLO-MAD), aiming to improve **transparency** and **reproducibility** under industrial privacy/IP constraints.
 ﻿
@@ -86,12 +85,9 @@ If you use this sample subset, please cite:
 
 ## Access to Full Materials
 
-The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement upon reasonable request.
-
-- Corresponding author: `<name>`
-- Email: `<email>`
-- Request subject: `YOLO-MAD dataset verification request`
-- Intended use: research verification / benchmarking under agreement
+The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement upon reasonable request
+﻿
+Please contact the author at **<qianwenjie@wust.edu.cn>** and specify that the intended use is research verification/benchmarking under the agreement.
 
 ---
 
