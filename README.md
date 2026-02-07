@@ -55,32 +55,9 @@ Here `class_id` is an integer (only `0` in this dataset), and `cx, cy, w, h` are
 ---
 
 ## Evaluation Details
-
-This section describes the evaluation protocol used in the manuscript so readers can interpret reported numbers consistently.
-
-### Input & Pre-processing
-- Input size: **640 × 640**
-- Resize policy: `<letterbox (keep aspect ratio) / direct resize>`  
-  *(Use the same policy for all compared methods.)*
-- Test-time augmentation (TTA): **No** (unless explicitly stated)
-
-### Post-processing
-- NMS: standard NMS
-- Confidence threshold: `<value or "Ultralytics default">`
-- NMS IoU threshold: `<value or "Ultralytics default">`
-- Max detections per image: `<value or "Ultralytics default">`
-
-> Recommendation: record the exact inference stack used in your experiments for reference:  
-> - Framework: `<PyTorch version>`, `<CUDA version>`  
-> - Implementation: `<Ultralytics/YOLO version>` (e.g., `ultralytics==x.y.z`)
-
-### Metrics
-We report:
-- **mAP@0.5** (IoU = 0.5)
-- **mAP@0.5:0.95** (IoU = 0.50:0.05:0.95, COCO-style)
-
-Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistency.
-
+﻿
+This section summarizes the evaluation protocol used in the manuscript so readers can interpret the reported results consistently. All images are evaluated at an input size of **640 × 640** using a fixed resize policy (`<letterbox (keep aspect ratio) / direct resize>`) that is kept identical across all compared methods, and **no test-time augmentation (TTA)** is applied unless explicitly stated. Post-processing uses standard NMS with a confidence threshold of `<value or "Ultralytics default">`, an NMS IoU threshold of `<value or "Ultralytics default">`, and a maximum of `<value or "Ultralytics default">` detections per image. For reference and reproducibility, please record the exact inference stack used in your experiments (e.g., `<PyTorch version>`, `<CUDA version>`, and `<Ultralytics/YOLO version>` such as `ultralytics==x.y.z`). We report **mAP@0.5** (IoU = 0.5) and **mAP@0.5:0.95** (IoU = 0.50:0.05:0.95, COCO-style), and Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistencies.
+﻿
 ---
 
 ## Citation
