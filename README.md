@@ -13,22 +13,16 @@ This repository releases an **annotated sample subset** on aluminum-can anomaly 
 ---
 ﻿
 ## Data
-﻿
-This release contains:
-- `download.zip` — the sample subset (images + YOLO labels)
-- `README.md` — this document
-﻿
-### Directory Structure
+
+This release provides a sample subset packaged as `download.zip` (images and YOLO-format labels) together with `README.md`. The repository root contains only:
 
 <pre>
 .
 ├── download.zip
 └── README.md
 </pre>
-﻿
-### After Unzipping
 
-Unzip `download.zip` to obtain the sample subset structure:
+After unzipping `download.zip`, the extracted folder contains the sample images and labels:
 
 <pre>
 download/
@@ -36,22 +30,15 @@ download/
 └── labels/          # YOLO-format annotations (.txt)
 </pre>
 
-Note: Some filenames may include spaces; when scripting, wrap paths in quotes.
+Image–label pairs are matched by the identical filename stem (i.e., `download/images/<stem>.jpg` corresponds to `download/labels/<stem>.txt`). For example:
 
-### Pairing Rule
-
-Image–label pairs are matched by identical filename stem:
-<pre>
-Image: download/images/<stem>.jpg
-Label: download/labels/<stem>.txt
-</pre>
-
-Example:
 <pre>
 download/images/D01_xxx_00_00_00-00_05_00_3087.jpg
 download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
-...
 </pre>
+
+Some filenames may include spaces; when scripting, wrap paths in quotes.
+
 
 ---
 
