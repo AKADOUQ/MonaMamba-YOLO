@@ -122,7 +122,7 @@ If you use this sample subset, please cite:
 
 ---
 
-## License
+## Access to Full Materials (Restricted)
 
 The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement upon reasonable request.
 
@@ -130,3 +130,8 @@ The **full dataset** and additional materials are retained and may be accessed f
 - Email: `<email>`
 - Request subject: `YOLO-MAD dataset verification request`
 - Intended use: research verification / benchmarking under agreement
+
+---
+
+## License
+
