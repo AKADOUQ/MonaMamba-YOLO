@@ -20,15 +20,14 @@ This release contains:
 - `README.md` — this document
 ﻿
 ### 1.1 Directory Structure
-﻿
-```text
+
 .
 ├── download.zip
 └── README.md﻿
 ﻿
 ### 1.2 After Unzipping
 
-Unzip download.zip to obtain the sample subset structure:
+Unzip `download.zip` to obtain the sample subset structure:
 download/
 ├── images/              # sample images (.jpg)
 └── labels/              # YOLO-format annotations (.txt)
@@ -37,15 +36,11 @@ Note: Some filenames may include spaces; when scripting, wrap paths in quotes.
 ### 1.3 Pairing Rule
 
 Image–label pairs are matched by identical filename stem:
-
 Image: download/images/<stem>.jpg
-
 Label: download/labels/<stem>.txt
 
 Example:
-
 download/images/D01_xxx_00_00_00-00_05_00_3087.jpg
-
 download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
 
 ---
@@ -60,7 +55,7 @@ download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
 
 ### 2.2 Label Format
 
-Each label file `labels/<stem>.txt` contains 0 or more lines in the standard **YOLO txt** format:
+Each label file `download/labels/<stem>.txt` contains 0 or more lines in the standard **YOLO txt** format:
 
 class_id cx cy w h
 
@@ -109,17 +104,7 @@ Precision/Recall should be computed under the same IoU criterion used for mAP re
 
 ---
 
-## 4. License & Usage
-
-This sample subset is released **for academic research and benchmarking only**.  
-Commercial use is not permitted without explicit written permission from the data owner/partner.
-
-- License: `<choose a license or state custom terms>`  
-  *(If you cannot adopt an OSI license, state custom “research-only” terms clearly.)*
-
----
-
-## 5. Citation
+## 4. Citation
 
 If you use this sample subset, please cite:
 
@@ -127,7 +112,7 @@ If you use this sample subset, please cite:
 
 ---
 
-## 6. Access to Full Materials
+## 5. Access to Full Materials
 
 The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement upon reasonable request.
 
