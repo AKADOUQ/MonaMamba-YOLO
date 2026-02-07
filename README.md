@@ -28,9 +28,17 @@ This release contains:
 ### 1.2 After Unzipping
 
 Unzip `download.zip` to obtain the sample subset structure:
+
 download/
 ├── images/              # sample images (.jpg)
 └── labels/              # YOLO-format annotations (.txt)
+
+<pre>
+download/
+├── images/          # sample images (.jpg)
+└── labels/          # YOLO-format annotations (.txt)
+</pre>
+
 Note: Some filenames may include spaces; when scripting, wrap paths in quotes.
 
 ### 1.3 Pairing Rule
