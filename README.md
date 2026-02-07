@@ -43,7 +43,7 @@ Some filenames may include spaces; when scripting, wrap paths in quotes.
 
 ## Annotation Specification (YOLO)
 
-This sample subset uses a single detection class: `fallen can` (class_id = 0), defined as a can that has fallen/tipped over on the production line (abnormal target). Each label file `download/labels/<stem>.txt` contains 0 or more lines in the standard YOLO txt format:
+This sample subset uses a single detection class: `fallen can` (class_id = 0), defined as a can that has fallen over on the production line (abnormal target). Each label file `download/labels/.txt` contains 0 or more lines in the standard YOLO txt format:
 
 <pre>
 class_id  cx  cy  w  h
