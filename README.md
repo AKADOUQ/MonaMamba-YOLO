@@ -3,7 +3,7 @@
 This repository releases an **annotated sample subset** on aluminum-can anomaly detection (YOLO-MAD), aiming to improve **transparency** and **reproducibility** under industrial privacy/IP constraints.
 ﻿
 - **Task:** single-class object detection
-- **Class:** `fallen can` (ID = 0)
+- **Class:** `fallen can`
 ﻿
 > **Availability statement.**  
 > Due to factory privacy, contractual restrictions, and IP protection, the **full dataset** and the **implementation** are not publicly released.  
@@ -65,7 +65,7 @@ If multiple fallen cans appear, annotate each instance separately (one line per 
 
 This section summarizes the evaluation protocol used in the manuscript so readers can interpret the reported results consistently. 
 
-All images are evaluated at an input size of 640 × 640 using a fixed resize policy that preserves the original aspect ratio with padding, applied identically across all compared methods, and no test-time augmentation (TTA) is used unless explicitly stated.
+All images are evaluated at an input size of 640 × 640 using a fixed resize policy that preserves the original aspect ratio with padding, applied identically across all compared methods, and no test-time augmentation is used unless explicitly stated.
 
 Post-processing uses standard NMS with the Ultralytics default validation settings (**conf=0.001**, **iou=0.7**, **max_det=300**). 
 
