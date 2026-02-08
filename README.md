@@ -81,8 +81,3 @@ If you use this sample subset, please cite:
 The **full dataset** and additional materials are retained and may be accessed for **research verification** under a data-use agreement upon reasonable request.
 ﻿
 Please contact the author at **<qianwenjie@wust.edu.cn>** and specify that the intended use is research verification/benchmarking under the agreement.
-
----
-
-## License
-
