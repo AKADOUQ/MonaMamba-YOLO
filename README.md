@@ -23,11 +23,11 @@ download/
 └── labels/          # YOLO-format annotations (.txt)
 </pre>
 
-Image–label pairs are matched by the identical filename stem (i.e., `download/images/<stem>.jpg` corresponds to `download/labels/<stem>.txt`). For example:
+Image–label pairs are matched by the identical filename stem. For example:
 
 <pre>
 download/images/D01_xxx_00_00_00-00_05_00_3087.jpg
-download/labels/D01_xxx_00_00_00-00_05_00_00-00_05_00_3087.txt
+download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
 </pre>
 
 Some filenames may include spaces; when scripting, wrap paths in quotes.
