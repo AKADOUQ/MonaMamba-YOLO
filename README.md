@@ -1,27 +1,24 @@
 # MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial Scenario
-﻿
+
 This repository releases an **annotated sample subset** on aluminum-can anomaly detection (YOLO-MAD), aiming to improve **transparency** and **reproducibility** under industrial privacy/IP constraints.
-﻿
-- **Task:** single-class object detection
-- **Class:** `fallen can` (ID = 0)
-﻿
+
+- **Task:** single-class object detection  
+- **Class:** `fallen can`
+
 > **Availability statement.**  
 > Due to factory privacy, contractual restrictions, and IP protection, the **full dataset** and the **implementation** are not publicly released.  
 > We release this **annotated sample subset** with annotation specifications and evaluation details, and retain all materials for research verification under a data-use agreement (with partner permission) upon reasonable request.
-﻿
+
 ---
-﻿
+
 ## Data
 
-This release provides a sample subset packaged as `download.zip` (images and YOLO-format labels) together with `README.md`. The repository root contains only:
+The annotated sample subset is provided as a single archive (`download.zip`) containing images and YOLO-format labels. Due to GitHub file size limits, the archive is hosted on **Baidu Netdisk** and can be downloaded from:
 
-<pre>
-.
-├── download.zip
-└── README.md
-</pre>
+**Baidu Netdisk:** `<paste_your_link_here>`  
+**Extraction code:** `<paste_code_here>` *(if applicable)*
 
-After unzipping `download.zip`, the extracted folder contains the sample images and labels:
+After downloading and unzipping `download.zip`, the extracted folder contains the sample images and labels:
 
 <pre>
 download/
@@ -33,11 +30,10 @@ Image–label pairs are matched by the identical filename stem (i.e., `download/
 
 <pre>
 download/images/D01_xxx_00_00_00-00_05_00_3087.jpg
-download/labels/D01_xxx_00_00_00-00_05_00_3087.txt
+download/labels/D01_xxx_00_00_00-00_05_00_00-00_05_00_3087.txt
 </pre>
 
 Some filenames may include spaces; when scripting, wrap paths in quotes.
-
 
 ---
 
