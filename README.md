@@ -34,7 +34,7 @@ Some filenames may include spaces; when scripting, wrap paths in quotes.
 
 ---
 
-## Annotation Specification (YOLO)
+## Annotation Specification
 
 This sample subset uses a single detection class: `fallen can` (class_id = 0), defined as a can that has fallen over on the production line (abnormal target). Each label file `download/labels/.txt` contains 0 or more lines in the standard YOLO txt format:
 
@@ -48,8 +48,8 @@ An empty label file indicates no fallen can; missing label files are not expecte
 
 Bounding boxes should follow the **physical can body** rather than specular highlights alone; 
 For partial occlusion, annotate the **visible extent**; 
-For truncation/out-of-frame cases, annotate the visible part and keep the box within the image; 
-For motion blur/glare, annotate only when the can boundary remains identifiable; 
+For truncation and out-of-frame cases, annotate the visible part and keep the box within the image; 
+For motion blur and glare, annotate only when the can boundary remains identifiable; 
 If multiple fallen cans appear, annotate each instance separately.
 
 ---
