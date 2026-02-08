@@ -44,7 +44,7 @@ class_id  cx  cy  w  h
 
 Here `class_id` is an integer (only `0` in this dataset), and `cx, cy, w, h` are **normalized** to `[0, 1]` by image width/height. 
 
-An empty label file indicates **no fallen can** in the corresponding image. 
+An empty label file indicates no fallen can; missing label files are not expected.
 
 Bounding boxes should follow the **physical can body** rather than specular highlights alone; 
 For partial occlusion, annotate the **visible extent**; 
