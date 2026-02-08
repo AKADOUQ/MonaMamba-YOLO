@@ -14,7 +14,7 @@ This repository releases the **full dataset** for aluminum-can anomaly detection
 
 ## Data
 
-The dataset is provided as a single archive (`download.zip`) containing images and YOLO-format labels. If you want to use the dataset released by this work, download the images and labels available [here](https://pan.baidu.com/s/1pIpsshS9onoC5QlZSiUEuw?pwd=5tey).
+The dataset is provided as a single archive (`download.zip`) containing images and YOLO-format labels. If you want to use the dataset released by this work, download the images and labels available [here](https://pan.baidu.com/s/1XpxGg9NmVErUzSyArOSl6Q?pwd=9bwu).
 
 After downloading and unzipping `download.zip`, the extracted folder contains the images and labels:
 
