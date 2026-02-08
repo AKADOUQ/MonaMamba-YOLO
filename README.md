@@ -20,7 +20,7 @@ After downloading and unzipping `download.zip`, the extracted folder contains th
 
 <pre>
 download/
-├── images/          # sample images (.jpg)
+├── images/          # images (.jpg)
 └── labels/          # YOLO-format annotations (.txt)
 </pre>
 
@@ -37,7 +37,7 @@ Some filenames may include spaces; when scripting, wrap paths in quotes.
 
 ## Annotation Specification
 
-This sample subset uses a single detection class: `fallen can` (class_id = 0), defined as a can that has fallen over on the production line (abnormal target). Each label file `download/labels/.txt` contains 0 or more lines in the standard YOLO txt format:
+This dataset uses a single detection class: `fallen can` (class_id = 0), defined as a can that has fallen over on the production line (abnormal target). Each label file `download/labels/<stem>.txt` contains 0 or more lines in the standard YOLO txt format:
 
 <pre>
 class_id  cx  cy  w  h
@@ -48,10 +48,10 @@ Here `class_id` is an integer (only `0` in this dataset), and `cx, cy, w, h` are
 An empty label file indicates no fallen can; missing label files are not expected.
 
 Bounding boxes should follow the **physical can body** rather than specular highlights alone; 
-For partial occlusion, annotate the **visible extent**; 
-For truncation and out-of-frame cases, annotate the visible part and keep the box within the image; 
-For motion blur and glare, annotate only when the can boundary remains identifiable; 
-If multiple fallen cans appear, annotate each instance separately.
+for partial occlusion, annotate the **visible extent**; 
+for truncation and out-of-frame cases, annotate the visible part and keep the box within the image; 
+for motion blur and glare, annotate only when the can boundary remains identifiable; 
+if multiple fallen cans appear, annotate each instance separately.
 
 ---
 
@@ -71,13 +71,13 @@ We report mAP@0.5 and mAP@0.5:0.95. Precision and Recall should be computed unde
 
 ## Citation
 
-If you use this sample subset, please cite:
+If you use this dataset, please cite:
 
-<MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial  Scenario>, IEEE Transactions on Industrial Informatics (under review).
+MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial Scenario, IEEE Transactions on Industrial Informatics (under review).
 
 ---
 
-
 ## Contact
 
-For questions or research verification requests, please contact the author at **<qianwenjie@wust.edu.cn>**.
+For questions or research verification requests, please contact the author at **qianwenjie@wust.edu.cn**.
+
