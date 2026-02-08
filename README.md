@@ -58,13 +58,13 @@ If multiple fallen cans appear, annotate each instance separately (one line per 
 
 This section summarizes the evaluation protocol used in the manuscript so readers can interpret the reported results consistently. 
 
-All images are evaluated at an input size of 640 × 640 using a fixed resize policy that preserves the original aspect ratio with padding, applied identically across all compared methods, and no test-time augmentation (TTA) is used unless explicitly stated.
+All images are evaluated at an input size of 640 × 640 using a fixed resize policy that preserves the original aspect ratio with padding, applied identically across all compared methods, and no test-time augmentation is used unless explicitly stated.
 
 Post-processing uses standard NMS with the Ultralytics default validation settings (**conf=0.001**, **iou=0.7**, **max_det=300**). 
 
 The experiments are conducted on Ubuntu 22.04 with **PyTorch 2.5.1** and **CUDA 12.4**. 
 
-We report mAP@0.5 and mAP@0.5:0.95, and Precision/Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistencies.
+We report mAP@0.5 and mAP@0.5:0.95. Precision and Recall should be computed under the same IoU criterion used for mAP reporting to avoid inconsistencies.
 
 ---
 
