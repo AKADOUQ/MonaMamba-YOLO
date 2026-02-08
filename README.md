@@ -50,7 +50,7 @@ Bounding boxes should follow the **physical can body** rather than specular high
 For partial occlusion, annotate the **visible extent**; 
 For truncation/out-of-frame cases, annotate the visible part and keep the box within the image; 
 For motion blur/glare, annotate only when the can boundary remains identifiable; 
-If multiple fallen cans appear, annotate each instance separately (one line per instance).
+If multiple fallen cans appear, annotate each instance separately.
 
 ---
 
