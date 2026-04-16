@@ -1,6 +1,6 @@
 # MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial Scenario
 
-This repository releases the **full dataset** for aluminum-can anomaly detection (YOLO-MAD), aiming to improve **transparency** and **reproducibility** under industrial scenario constraints.
+This repository releases the dataset used in our study on aluminum-can anomaly detection under industrial scenarios.
 
 - **Task:** single-class object detection  
 - **Class:** This dataset uses a single detection class, `fallen can`, which corresponds to the abnormal dumping / toppled can target described in the manuscript.
