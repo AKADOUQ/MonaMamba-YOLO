@@ -3,7 +3,7 @@
 This repository releases the **full dataset** for aluminum-can anomaly detection (YOLO-MAD), aiming to improve **transparency** and **reproducibility** under industrial scenario constraints.
 
 - **Task:** single-class object detection  
-- **Class:** `fallen can`
+- **Class:** This dataset uses a single detection class, `fallen can`, which corresponds to the abnormal dumping / toppled can target described in the manuscript.
 
 > **Availability statement.**  
 > The **full dataset** is publicly available via the download link below.  
