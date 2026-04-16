@@ -73,7 +73,7 @@ We report mAP@0.5 and mAP@0.5:0.95. Precision and Recall should be computed unde
 
 If you use this dataset, please cite:
 
-MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial Scenario, IEEE Transactions on Industrial Informatics (under review).
+MonaMamba-YOLO: Robust Dense Aluminum-Can Anomaly Detection under Industrial Scenario.
 
 ---
 
